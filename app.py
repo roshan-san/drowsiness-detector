@@ -1,4 +1,3 @@
-from fastapi import FastAPI
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 from typing import Annotated
@@ -15,8 +14,6 @@ async def read_root():
 
 @app.post("/upload_image/")
 async def upload_image(file: Annotated[UploadFile, File()]):
-    UPLOAD_FOLDER = "received_images"
-    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     if not file:
         raise HTTPException(status_code=400, detail="No file uploaded")
 
