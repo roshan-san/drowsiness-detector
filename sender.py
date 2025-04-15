@@ -3,7 +3,7 @@ import time
 import requests
 
 # --- Configuration ---
-API_ENDPOINT = "http://127.0.0.1:8000/upload_image"  # Replace with your FastAPI endpoint
+API_ENDPOINT = "http:/http://localhost:8000/upload_image"  # Replace with your FastAPI endpoint
 IMAGE_FILENAME = "captured_image.jpg"
 
 def capture_image():
