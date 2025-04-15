@@ -3,7 +3,7 @@ import time
 import requests
 
 # --- Configuration ---
-API_ENDPOINT = "http:/http://localhost:8000/upload_image"  # Replace with your FastAPI endpoint
+API_ENDPOINT = "https://drowsiness-detector-seven.vercel.app/upload_image"  # Replace with your FastAPI endpoint
 IMAGE_FILENAME = "captured_image.jpg"
 
 def capture_image():
